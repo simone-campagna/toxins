@@ -1,0 +1,37 @@
+sudo: false
+language: python
+python:
+  - "3.4"
+
+# command to install dependencies
+install:
+  - "pip3 install --upgrade pytest"
+  - "pip3 install --upgrade pytest-cov"
+  - "pip3 install --upgrade coveralls"
+  - "pip3 install ."
+
+environment variables:
+# env:
+#   global:
+#     - COVERAGE_PROCESS_START=.coveragerc
+
+# command to run tests
+script:
+  - coverage run --source toxins `which py.test`
+
+after_success:
+  - coveralls --rcfile=.coveragerc
+
+# notifications:
+notifications:
+  email:
+    recipients:
+      - simone.campagna11@gmail.com
+    on_success: change
+    on_failure: always
+
+# branches:
+branches:
+  only:
+    - master
+
