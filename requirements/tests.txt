@@ -2,4 +2,4 @@
 pytest
 pytest-cov
 pytest-sugar
-/home/simone/Projects/Sources/toxins
+toxins>=0.1
