@@ -6,9 +6,9 @@ Toxins is a template tox-based project, providing some tools that can be used in
     :target: https://travis-ci.org/simone-campagna/toxins
     :alt: Build status
 
-.. image:: https://readthedocs.org/projects/toxins?version=latest
+.. image:: https://readthedocs.org/projects/toxins/badge/?version=latest
     :target: http://toxins.readthedocs.org/en/latest/?badge=latest
-    :alt: Documentation Status   
+    :alt: Documentation Status
     
 .. image:: https://coveralls.io/repos/github/simone-campagna/toxins.svg?branch=master
     :target: https://coveralls.io/github/simone-campagna/toxins?branch=master
