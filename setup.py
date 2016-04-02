@@ -27,16 +27,15 @@ import sys
 if __name__ == "__main__":
     DIRNAME = os.path.abspath(os.path.dirname(__file__))
     py_dirname = DIRNAME
-    # if py_dirname:
-    #     os.chdir(py_dirname)
-    # try:
-    #     sys.path.insert(0, py_dirname)
-    # 
-    #     from toxins.version import VERSION
-    #     version = VERSION
-    # finally:
-    #     del sys.path[0]
-    version = "0.1"
+    if py_dirname:
+        os.chdir(py_dirname)
+    try:
+        sys.path.insert(0, py_dirname)
+    
+        from toxins.version import VERSION
+        version = VERSION
+    finally:
+        del sys.path[0]
     
     def read_requirements(*filenames):
         requirements = []
@@ -56,7 +55,7 @@ if __name__ == "__main__":
             scripts.append(filepath)
     
     # search packages
-    root_packages = []
+    root_packages = ['toxins']
     packages = []
     for package in root_packages:
         package_dirname = os.path.join(py_dirname, package)
@@ -72,7 +71,7 @@ if __name__ == "__main__":
         description="Tools for tox projects",
         author="Simone Campagna",
         author_email="simone.campagna11@gmail.com",
-        # install_requires=read_requirements('install'),
+        install_requires=read_requirements('install'),
         package_data={},
         # url="https://github.com/simone-campagna/toxins",
         # download_url = 'https://github.com/simone-campagna/toxins/archive/{}.tar.gz'.format(version),
