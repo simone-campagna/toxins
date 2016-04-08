@@ -2,4 +2,4 @@
 pytest
 pytest-cov
 pytest-sugar
-toxins>=0.1
+toxins>=0.2
