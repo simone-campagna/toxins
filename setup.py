@@ -63,6 +63,7 @@ if __name__ == "__main__":
             if '__init__.py' in filenames:
                 rdirpath = os.path.relpath(dirpath, py_dirname)
                 packages.append(os.path.normpath(rdirpath).replace(os.sep, '.'))
+    print(packages)
     
     setup(
         name="toxins",

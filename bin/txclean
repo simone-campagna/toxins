@@ -26,6 +26,7 @@ import shutil
 import sys
 import subprocess
 
+import toxins
 
 DIRTYPE_PY = 'py'
 DIRTYPE_DATA = 'data'
