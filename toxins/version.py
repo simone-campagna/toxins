@@ -19,9 +19,9 @@
 Project version:
 
 >>> print(VERSION_INFO)
-VersionInfo(major=0, minor=2, patch=4)
+VersionInfo(major=0, minor=2, patch=5)
 >>> print(VERSION)
-0.2.4
+0.2.5
 >>>
 
 """
@@ -46,6 +46,6 @@ VersionInfo = collections.namedtuple('VersionInfo', (
     'patch',
 ))
 
-VERSION_INFO = VersionInfo(major=0, minor=2, patch=4)
+VERSION_INFO = VersionInfo(major=0, minor=2, patch=5)
 
 VERSION = '.'.join(str(v) for v in VERSION_INFO)
