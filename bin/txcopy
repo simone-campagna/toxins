@@ -68,7 +68,7 @@ def cp_dir(src, dst, logger, trace=False, symlinks=False, ignore=None, remove_de
         logger.debug("trying to copy tree {!r} -> {!r}...".format(src, dst))
         shutil.copytree(src, dst, symlinks=symlinks, ignore=ignore)
     except:
-        show_error(logger, trace, "cannot copy tree {!r} -> {!r}".format(ddir))
+        show_error(logger, trace, "cannot copy tree {!r} -> {!r}".format(src, dst))
         return 1
     
 
