@@ -9,8 +9,8 @@ Toxins is a template tox-based project, providing some tools that can be used in
 .. image:: https://readthedocs.org/projects/toxins/badge/?version=latest
     :target: http://toxins.readthedocs.org/en/latest/?badge=latest
     :alt: Documentation Status
-    
-.. image:: https://coveralls.io/repos/github/simone-campagna/toxins.svg?branch=master
+
+.. image:: https://coveralls.io/repos/github/simone-campagna/toxins/badge.svg?branch=master
     :target: https://coveralls.io/github/simone-campagna/toxins?branch=master
     :alt: Coverage report
 
